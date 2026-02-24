@@ -301,3 +301,14 @@ a:focus, button:focus {
     outline: 2px solid #4c51bf;
     outline-offset: 2px;
 }
+
+/* Banner */
+.banner {
+    width: 100%;
+    max-width: 600px;  /* era 900px - riduci questo valore */
+    height: auto;
+    margin: 0 auto 2rem;
+    display: block;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
