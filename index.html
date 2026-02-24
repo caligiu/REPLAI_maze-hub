@@ -3,251 +3,357 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>REPLAI Project Hub - Open Materials</title>
+    <title>MAZE Hub - Open Materials Repository</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
         <div class="container">
-            <h1>🧠 REPLAI Project Hub</h1>
-            <p class="subtitle">Open Online Materials Mapping<br>
-            Vespignani – Maze Task – Calignano</p>
+            <img src="banner.jpg" alt="PRIN 2022 PNRR - MUR NextGenerationEU" class="banner">
+            <h1>MAZE Hub</h1>
+            <p class="subtitle">Open Materials Repository<br>
+            Principal Investigators: Francesco Vespignani – Giulia Calignano</p>
         </div>
     </header>
 
     <nav>
         <div class="container">
-            <a href="#objective">Objective</a>
-            <a href="#github">GitHub</a>
-            <a href="#osf">OSF</a>
-            <a href="#theses">Theses</a>
-            <a href="#papers">Papers</a>
-            <a href="#ecosystem">Ecosystem</a>
+            <a href="#overview">Overview</a>
+            <a href="#github">Code Repositories</a>
+            <a href="#osf">Data Archives</a>
+            <a href="#theses">Dissertations</a>
+            <a href="#publications">Publications</a>
+            <a href="#ecosystem">Pipeline Structure</a>
+            <a href="#inventory">Materials Inventory</a>
         </div>
     </nav>
 
     <main class="container">
         
-        <!-- OBJECTIVE -->
-        <section id="objective">
-            <h2>📋 Objective</h2>
-            <p>Complete collection of online materials containing joint or linked references to:</p>
-            <ul>
-                <li><strong>Francesco Vespignani</strong></li>
-                <li><strong>Maze Task / Repetition Maze</strong></li>
-                <li><strong>Giulia Calignano</strong></li>
-            </ul>
+        <!-- OVERVIEW -->
+        <section id="overview">
+            <h2>Project Overview</h2>
+            <p>This repository aggregates open-access materials related to the <strong>Repetition Experiments as Probes on Linguistics Analysis and Integration (REPLAI)</strong> research program, funded through <strong>PRIN 2022 MUR NextGeneration EU</strong>.</p>
+            
             <div class="info-box">
-                <h3>Sources Considered</h3>
-                <p>GitHub • OSF (Open Science Framework) • OSF Preprints • Zenodo • UNIPD Thesis Repository • Open Access Academic Materials</p>
+                <h3>Data Sources</h3>
+                <ul>
+                    <li>GitHub (experimental code repositories)</li>
+                    <li>Open Science Framework (behavioral datasets, preprints)</li>
+                    <li>University of Padova institutional repository (dissertations)</li>
+                    <li>Conference proceedings (peer-reviewed abstracts)</li>
+                </ul>
             </div>
         </section>
 
         <!-- GITHUB -->
         <section id="github">
-            <h2>💻 GitHub – Repositories</h2>
+            <h2>Code Repositories</h2>
             
             <div class="card">
-                <h3>Repetition Maze (main repository)</h3>
-                <p><strong>Author:</strong> Francesco Vespignani<br>
-                <strong>Technology:</strong> jsPsych (web-based experiment)<br>
-                <strong>Status:</strong> public</p>
+                <h3>RepetitionMaze</h3>
+                <p><strong>Maintainer:</strong> Francesco Vespignani<br>
+                <strong>Implementation:</strong> jsPsych framework (web-based behavioral paradigm)<br>
+                <strong>License:</strong> Public</p>
+                <p><strong>Components:</strong></p>
                 <ul>
-                    <li>Complete experimental Maze task</li>
-                    <li>Experiment parameter configuration</li>
-                    <li>OSF data saving pipeline</li>
-                    <li>Linguistic stimuli and distractors</li>
-                    <li>Replicable online execution</li>
+                    <li>Full experimental Maze task implementation</li>
+                    <li>Parameterizable trial configuration</li>
+                    <li>Automated data pipeline to OSF storage</li>
+                    <li>Psycholinguistic stimuli database with distractor items</li>
+                    <li>Reproducible online deployment infrastructure</li>
                 </ul>
                 <div class="links">
-                    <a href="https://github.com/francesco-vespignani/RepetitionMaze" target="_blank" class="btn">📂 Repository</a>
-                    <a href="https://francesco-vespignani.github.io/RepetitionMaze/" target="_blank" class="btn">🌐 Documentation</a>
+                    <a href="https://github.com/francesco-vespignani/RepetitionMaze" target="_blank" class="btn">Repository</a>
+                    <a href="https://francesco-vespignani.github.io/RepetitionMaze/" target="_blank" class="btn">Technical Documentation</a>
                 </div>
             </div>
 
             <div class="card">
                 <h3>Sentence Stimuli – Repetition Maze</h3>
-                <p><strong>Author:</strong> Giulia Calignano</p>
+                <p><strong>Maintainer:</strong> Giulia Calignano</p>
+                <p><strong>Contents:</strong></p>
                 <ul>
-                    <li>Linguistic materials for Repetition Maze</li>
-                    <li>Stimuli construction and organization</li>
-                    <li>Experimental sentence dataset</li>
-                    <li>Directly linked to Maioli's thesis</li>
+                    <li>Psycholinguistic stimulus materials for Repetition Maze paradigm</li>
+                    <li>Systematic construction and norming procedures</li>
+                    <li>Experimental sentence dataset with controlled syntactic/semantic properties</li>
+                    <li>Integrated with Maioli (2025) dissertation empirical work</li>
                 </ul>
+                <p><strong>Methodological note:</strong> Materials employed in the development of experimental protocols described in Maioli's Master's dissertation.</p>
                 <div class="links">
-                    <a href="https://github.com/caligiu/sentencestimuli_repetitionmaze" target="_blank" class="btn">📂 Repository</a>
+                    <a href="https://github.com/caligiu/sentencestimuli_repetitionmaze" target="_blank" class="btn">Repository</a>
                 </div>
             </div>
 
             <div class="card">
                 <h3>Measuring Language Italian</h3>
-                <p><strong>Author:</strong> Francesco Vespignani</p>
+                <p><strong>Maintainer:</strong> Francesco Vespignani</p>
+                <p><strong>Contents:</strong></p>
                 <ul>
-                    <li>Italian language measurement tools</li>
-                    <li>Reusable methodological resources</li>
-                    <li>Experimental pipelines compatible with Maze Task</li>
+                    <li>Psychometric tools for Italian language processing measurement</li>
+                    <li>Reusable experimental methodology resources</li>
+                    <li>Analysis pipelines compatible with Maze Task framework</li>
                 </ul>
                 <div class="links">
-                    <a href="https://github.com/francesco-vespignani/measuring-language-italian" target="_blank" class="btn">📂 Repository</a>
+                    <a href="https://github.com/francesco-vespignani/measuring-language-italian" target="_blank" class="btn">Repository</a>
                 </div>
             </div>
 
             <div class="info-box">
-                <h3>👤 Author GitHub Profile</h3>
+                <h3>Primary Investigator Profile</h3>
                 <p><a href="https://github.com/francesco-vespignani" target="_blank">github.com/francesco-vespignani</a></p>
-                <p><strong>Related repositories:</strong> RepetitionMaze • measuring-language-italian • audiovideo-eegsynch • digERPs</p>
+                <p><strong>Associated repositories:</strong></p>
+                <ul>
+                    <li>RepetitionMaze</li>
+                    <li>measuring-language-italian</li>
+                    <li>audiovideo-eegsynch (multimodal integration)</li>
+                    <li>digERPs (event-related potential analysis)</li>
+                </ul>
             </div>
         </section>
 
         <!-- OSF -->
         <section id="osf">
-            <h2>🔬 OSF – Open Science Framework</h2>
+            <h2>Data Archives – Open Science Framework</h2>
             
             <div class="card">
-                <h3>Main OSF Component</h3>
-                <p><strong>ID:</strong> vh864</p>
-                <p><strong>Functions:</strong></p>
+                <h3>Primary OSF Component</h3>
+                <p><strong>Persistent identifiers:</strong></p>
                 <ul>
-                    <li>Participant data storage</li>
-                    <li>Practice / experiment separation</li>
-                    <li>Automatic saving</li>
-                    <li>Born-open archiving</li>
+                    <li><a href="https://osf.io/vh864/" target="_blank">https://osf.io/vh864/</a></li>
+                    <li><a href="https://osf.io/vh864/overview" target="_blank">Project Overview</a></li>
                 </ul>
-                <p><strong>File types:</strong> Behavioral data CSV • Session metadata • Experimental identifiers</p>
+                <p><strong>Archival functions:</strong></p>
+                <ul>
+                    <li>Raw participant behavioral data storage</li>
+                    <li>Practice/experimental session segmentation</li>
+                    <li>Automated trial-by-trial logging</li>
+                    <li>Born-open data management protocol</li>
+                </ul>
+                <p><strong>Data structure:</strong></p>
+                <ul>
+                    <li>Behavioral response latencies (CSV format)</li>
+                    <li>Session-level metadata</li>
+                    <li>Participant anonymized identifiers</li>
+                </ul>
                 <div class="links">
-                    <a href="https://osf.io/vh864/" target="_blank" class="btn">🔗 OSF Component</a>
-                    <a href="https://osf.io/vh864/overview" target="_blank" class="btn">📄 Overview</a>
+                    <a href="https://osf.io/vh864/" target="_blank" class="btn">OSF Component</a>
+                    <a href="https://osf.io/vh864/overview" target="_blank" class="btn">Data Overview</a>
                 </div>
             </div>
 
             <div class="card">
-                <h3>Related OSF Project</h3>
-                <p><strong>ID:</strong> 568sh</p>
+                <h3>REPLAI Project Container</h3>
+                <p><strong>Persistent identifier:</strong> <a href="https://osf.io/568sh/overview" target="_blank">https://osf.io/568sh/overview</a></p>
+                <p><strong>Contents:</strong></p>
                 <ul>
-                    <li>REPLAI project structure</li>
-                    <li>Shared experimental materials</li>
-                    <li>Connection between code, data and analysis</li>
+                    <li>REPLAI project organizational structure</li>
+                    <li>Cross-referenced experimental materials</li>
+                    <li>Integrated code-data-analysis workflow documentation</li>
                 </ul>
                 <div class="links">
-                    <a href="https://osf.io/568sh/overview" target="_blank" class="btn">🔗 OSF Project</a>
+                    <a href="https://osf.io/568sh/overview" target="_blank" class="btn">Project Container</a>
                 </div>
             </div>
+        </section>
 
+        <!-- PREPRINT -->
+        <section id="preprint">
+            <h2>Preprint Publications</h2>
+            
             <div class="card">
-                <h3>OSF Preprint</h3>
-                <p><strong>ID:</strong> 6krn7_v1</p>
+                <h3>OSF Preprint – Repetition Maze Paradigm</h3>
+                <p><strong>Persistent identifier:</strong> <a href="https://osf.io/preprints/osf/6krn7_v1" target="_blank">https://osf.io/preprints/osf/6krn7_v1</a></p>
+                <p><strong>Contents:</strong></p>
                 <ul>
-                    <li>Theoretical and methodological paradigm description</li>
-                    <li>Repetition Maze formalization</li>
-                    <li>Open science experimental framework</li>
+                    <li>Theoretical framework for sentence repetition paradigm</li>
+                    <li>Methodological formalization of Repetition Maze task</li>
+                    <li>Open science experimental design principles</li>
                 </ul>
                 <div class="links">
-                    <a href="https://osf.io/preprints/osf/6krn7_v1" target="_blank" class="btn">📄 Preprint</a>
+                    <a href="https://osf.io/preprints/osf/6krn7_v1" target="_blank" class="btn">Access Preprint</a>
                 </div>
             </div>
         </section>
 
         <!-- THESES -->
         <section id="theses">
-            <h2>🎓 Theses – University of Padova</h2>
+            <h2>Graduate Dissertations – University of Padova</h2>
             
             <div class="card">
-                <h3>Biondi (Master's Thesis, Open Access)</h3>
-                <p><strong>Title:</strong> Esplorando il Maze Task: l'impatto delle Violazioni Linguistiche sulla Ripetizione di Frasi</p>
-                <p><strong>Supervisor:</strong> Francesco Vespignani<br>
-                <strong>Year:</strong> 2023/2024</p>
-                <p><strong>Contents:</strong></p>
+                <h3>Biondi (2024)</h3>
+                <p><strong>Title:</strong> Esplorando il Maze Task: l'impatto delle Violazioni Linguistiche sulla Ripetizione di Frasi<br>
+                <em>(Exploring the Maze Task: Impact of Linguistic Violations on Sentence Repetition)</em></p>
                 <ul>
-                    <li>Online Maze Task</li>
-                    <li>Linguistic violations</li>
-                    <li>Reaction times</li>
-                    <li>Integration of self-paced reading and Maze</li>
+                    <li><strong>Degree:</strong> Master's (Laurea Magistrale)</li>
+                    <li><strong>Supervisor:</strong> Francesco Vespignani</li>
+                    <li><strong>Year:</strong> 2023/2024</li>
+                    <li><strong>Access:</strong> Open Access</li>
+                    <li><strong>Repository:</strong> <a href="https://thesis.unipd.it/handle/20.500.12608/64850" target="_blank">institutional archive</a></li>
+                </ul>
+                <p><strong>Empirical focus:</strong></p>
+                <ul>
+                    <li>Web-based Maze Task behavioral paradigm</li>
+                    <li>Syntactic/semantic violation processing</li>
+                    <li>Response latency analysis</li>
+                    <li>Integration with self-paced reading methodology</li>
                 </ul>
                 <div class="links">
-                    <a href="https://thesis.unipd.it/handle/20.500.12608/64850" target="_blank" class="btn">📚 Thesis Repository</a>
+                    <a href="https://thesis.unipd.it/handle/20.500.12608/64850" target="_blank" class="btn">Dissertation Record</a>
                 </div>
             </div>
 
             <div class="card">
-                <h3>Maioli (Master's Thesis)</h3>
+                <h3>Maioli (2025)</h3>
                 <p><strong>Title:</strong> The Repetition Maze Task as a possible tool to study memory for sentences in Primary Progressive Aphasia</p>
-                <p><strong>Supervisor:</strong> Francesco Vespignani<br>
-                <strong>Co-supervisor:</strong> Giulia Calignano<br>
-                <strong>Year:</strong> 2024/2025</p>
-                <p><strong>Related materials:</strong></p>
                 <ul>
-                    <li>GitHub repository sentencestimuli_repetitionmaze</li>
-                    <li>OSF dataset</li>
-                    <li>Formalized Repetition Maze paradigm</li>
+                    <li><strong>Degree:</strong> Master's (Laurea Magistrale)</li>
+                    <li><strong>Supervisor:</strong> Francesco Vespignani</li>
+                    <li><strong>Co-supervisor:</strong> Giulia Calignano</li>
+                    <li><strong>Year:</strong> 2024/2025</li>
+                    <li><strong>Repository:</strong> <a href="https://thesis.unipd.it/handle/20.500.12608/100843" target="_blank">institutional archive</a></li>
+                </ul>
+                <p><strong>Associated materials:</strong></p>
+                <ul>
+                    <li>sentencestimuli_repetitionmaze repository (stimulus development)</li>
+                    <li>OSF archived behavioral dataset</li>
+                    <li>Formalized Repetition Maze experimental protocol</li>
                 </ul>
                 <div class="links">
-                    <a href="https://thesis.unipd.it/handle/20.500.12608/100843" target="_blank" class="btn">📚 Thesis Repository</a>
+                    <a href="https://thesis.unipd.it/handle/20.500.12608/100843" target="_blank" class="btn">Dissertation Record</a>
                 </div>
             </div>
         </section>
 
-        <!-- PAPERS -->
-        <section id="papers">
-            <h2>📄 Scientific Materials</h2>
+        <!-- PUBLICATIONS -->
+        <section id="publications">
+            <h2>Conference Proceedings</h2>
             
             <div class="card">
-                <h3>AIP Experimental Congress 2024 Abstract</h3>
+                <h3>AIP Experimental Section – 2024</h3>
                 <p><strong>Title:</strong> Sentence parsing and repetition with the Maze Task</p>
-                <p><strong>Authors:</strong> Francesco Vespignani, Giulia Calignano, Boris Biondi</p>
-                <p><strong>Contents:</strong></p>
+                <p><strong>Authors:</strong></p>
                 <ul>
-                    <li>Maze experimental design</li>
-                    <li>36 trials per condition</li>
-                    <li>Repetition ×5</li>
-                    <li>Open-source reproducibility</li>
+                    <li>Francesco Vespignani</li>
+                    <li>Giulia Calignano</li>
+                    <li>Boris Biondi</li>
+                </ul>
+                <p><strong>Proceedings:</strong> <a href="https://indico.sissa.it/event/149/contributions/2955/contribution.pdf" target="_blank">PDF</a></p>
+                <p><strong>Methodological specifications:</strong></p>
+                <ul>
+                    <li>Maze task experimental design</li>
+                    <li>36 trials per experimental condition</li>
+                    <li>5-repetition paradigm</li>
+                    <li>Open-source reproducibility framework</li>
                 </ul>
                 <div class="links">
-                    <a href="https://indico.sissa.it/event/149/contributions/2955/contribution.pdf" target="_blank" class="btn">📄 PDF Abstract</a>
+                    <a href="https://indico.sissa.it/event/149/contributions/2955/contribution.pdf" target="_blank" class="btn">Conference Abstract</a>
                 </div>
             </div>
+        </section>
 
+        <!-- ZENODO -->
+        <section id="zenodo">
+            <h2>External Repository Search</h2>
+            
             <div class="info-box">
-                <h3>📊 Zenodo</h3>
-                <p>Targeted search returns no indexed records with "Vespignani Maze", "Calignano Maze", or "Repetition Maze".</p>
-                <p><strong>Conclusion:</strong> OSF constitutes the primary data archive.</p>
+                <h3>Zenodo Archive Query</h3>
+                <p>Systematic search yielded no indexed records for:</p>
+                <ul>
+                    <li>"Vespignani Maze"</li>
+                    <li>"Calignano Maze"</li>
+                    <li>"Repetition Maze"</li>
+                </ul>
+                <p><strong>Inference:</strong> Open Science Framework serves as the primary data repository for this research program.</p>
             </div>
         </section>
 
         <!-- ECOSYSTEM -->
         <section id="ecosystem">
-            <h2>🌐 Open Ecosystem Structure</h2>
+            <h2>Research Pipeline Architecture</h2>
             
             <div class="flowchart">
-                <div class="flow-item">RepetitionMaze (GitHub)</div>
+                <div class="flow-item">Experimental Code (GitHub: RepetitionMaze)</div>
                 <div class="flow-arrow">↓</div>
-                <div class="flow-item">SentenceStimuli (GitHub - Calignano)</div>
+                <div class="flow-item">Stimulus Materials (GitHub: Calignano)</div>
                 <div class="flow-arrow">↓</div>
-                <div class="flow-item">Data Pipeline</div>
+                <div class="flow-item">Data Acquisition Pipeline</div>
                 <div class="flow-arrow">↓</div>
-                <div class="flow-item">OSF Components (vh864 / 568sh)</div>
+                <div class="flow-item">Raw Data Archives (OSF: vh864 / 568sh)</div>
                 <div class="flow-arrow">↓</div>
-                <div class="flow-item">Experimental Datasets</div>
+                <div class="flow-item">Processed Experimental Datasets</div>
                 <div class="flow-arrow">↓</div>
-                <div class="flow-item">UNIPD Master's Theses</div>
+                <div class="flow-item">Graduate Dissertation Analyses (UNIPD)</div>
                 <div class="flow-arrow">↓</div>
-                <div class="flow-item">OSF Preprint</div>
+                <div class="flow-item">Theoretical Framework (OSF Preprint)</div>
                 <div class="flow-arrow">↓</div>
-                <div class="flow-item">Open Conference Abstracts</div>
+                <div class="flow-item">Conference Dissemination (Peer Review)</div>
+            </div>
+        </section>
+
+        <!-- INVENTORY -->
+        <section id="inventory">
+            <h2>Comprehensive Materials Inventory</h2>
+            
+            <div class="card">
+                <h3>Computational Resources</h3>
+                <ol>
+                    <li>RepetitionMaze – Full experimental implementation</li>
+                    <li>sentencestimuli_repetitionmaze – Psycholinguistic stimuli database</li>
+                    <li>measuring-language-italian – Psychometric assessment tools</li>
+                </ol>
             </div>
 
             <div class="card">
-                <h3>Structural Observation</h3>
-                <p>The identified materials belong to the same research program:</p>
-                <h4 style="text-align: center; color: #2563eb; margin: 1rem 0;">REPLAI project — PRIN 2022</h4>
-                <p><strong>Characteristics:</strong></p>
+                <h3>Open Datasets</h3>
+                <ol>
+                    <li>OSF component vh864 (behavioral data)</li>
+                    <li>OSF project 568sh (integrated materials)</li>
+                </ol>
+            </div>
+
+            <div class="card">
+                <h3>Scholarly Publications</h3>
+                <ol>
+                    <li>OSF Preprint 6krn7_v1 (theoretical framework)</li>
+                    <li>AIP 2024 Conference Abstract (empirical findings)</li>
+                </ol>
+            </div>
+
+            <div class="card">
+                <h3>Graduate Research</h3>
+                <ol>
+                    <li>Biondi (2024) – Linguistic violations in sentence repetition</li>
+                    <li>Maioli (2025) – Sentence memory in progressive aphasia</li>
+                </ol>
+            </div>
+
+            <div class="card">
+                <h3>Technical Documentation</h3>
+                <ol>
+                    <li>RepetitionMaze implementation guide</li>
+                    <li>Experimental protocol specifications</li>
+                </ol>
+            </div>
+        </section>
+
+        <!-- STRUCTURAL NOTE -->
+        <section id="structure">
+            <h2>Program Structure</h2>
+            
+            <div class="card">
+                <h3>Research Integration</h3>
+                <p>All indexed materials constitute components of a unified research program:</p>
+                <h4 style="text-align: center; color: #4c51bf; margin: 1.5rem 0; font-size: 1.4rem;">REPLAI – PRIN 2022 MUR NextGeneration EU</h4>
+                <p><strong>Organizational principles:</strong></p>
                 <ul>
-                    <li>Open code → GitHub</li>
-                    <li>Open data → OSF</li>
-                    <li>Linguistic materials → GitHub Calignano</li>
-                    <li>Analysis → Master's theses</li>
-                    <li>Dissemination → Preprints and open conferences</li>
+                    <li>Open-source experimental code (GitHub infrastructure)</li>
+                    <li>Born-open behavioral data (OSF archival)</li>
+                    <li>Collaborative stimulus development (Calignano repository)</li>
+                    <li>Graduate-level empirical investigation (Master's dissertations)</li>
+                    <li>Transparent dissemination (preprints, open conference proceedings)</li>
                 </ul>
-                <p class="note">No independent external repositories associated with the Maze paradigm with Calignano co-authorship exist outside this pipeline.</p>
+                <p class="note"><strong>Scope note:</strong> No independent repositories with Calignano co-authorship associated with the Maze paradigm exist external to this integrated pipeline.</p>
             </div>
         </section>
 
@@ -255,9 +361,9 @@
 
     <footer>
         <div class="container">
-            <p>REPLAI Project Hub • Open online materials mapping<br>
-            Vespignani – Maze Task – Calignano</p>
-            <p style="font-size: 0.9rem; opacity: 0.8;">Last updated: 2025</p>
+            <p>MAZE Hub – Open Materials Repository<br>
+            REPLAI Project: Repetition Experiments as Probes on Linguistics Analysis and Integration</p>
+            <p style="font-size: 0.9rem; opacity: 0.8; margin-top: 1rem;">PRIN 2022 – MUR NextGeneration EU<br>Last updated: 2025</p>
         </div>
     </footer>
 
