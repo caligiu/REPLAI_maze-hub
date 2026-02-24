@@ -454,3 +454,272 @@ section h4 {
         height: 120px;
     }
 }
+
+/* =====================
+   FAIRNESS PAGE STYLES
+   ===================== */
+
+/* FAIR Legend */
+.fair-legend {
+    background: white;
+    border-radius: 12px;
+    padding: 2rem;
+    margin: 2rem 0;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    border: 1px solid #e2e8f0;
+}
+
+.fair-legend h3 {
+    color: #2d3748;
+    margin-bottom: 1.5rem;
+    font-size: 1.3rem;
+}
+
+.legend-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+}
+
+.legend-item {
+    text-align: center;
+}
+
+.legend-item p {
+    margin-top: 0.5rem;
+    font-size: 0.9rem;
+    color: #718096;
+}
+
+/* FAIR Table */
+.fair-table {
+    background: white;
+    border-radius: 12px;
+    padding: 1.5rem;
+    margin: 2rem 0;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    border: 1px solid #e2e8f0;
+    overflow-x: auto;
+}
+
+.fair-table table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.fair-table th {
+    background: linear-gradient(135deg, #d4a574 0%, #4a7ba7 100%);
+    color: white;
+    padding: 1rem;
+    text-align: left;
+    font-weight: 600;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.fair-table td {
+    padding: 1rem;
+    border-bottom: 1px solid #e2e8f0;
+    color: #4a5568;
+    font-size: 0.95rem;
+}
+
+.fair-table tbody tr:hover {
+    background: #f7fafc;
+}
+
+.fair-table tbody tr:last-child td {
+    border-bottom: none;
+}
+
+/* Status Badges */
+.status-badge {
+    display: inline-block;
+    padding: 0.4rem 0.8rem;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.status-complete {
+    background: #c6f6d5;
+    color: #22543d;
+}
+
+.status-progress {
+    background: #bee3f8;
+    color: #2c5282;
+}
+
+.status-planned {
+    background: #feebc8;
+    color: #7c2d12;
+}
+
+.status-review {
+    background: #fed7d7;
+    color: #742a2a;
+}
+
+/* Assignee Tags */
+.assignee {
+    display: inline-block;
+    padding: 0.3rem 0.7rem;
+    border-radius: 15px;
+    font-size: 0.85rem;
+    font-weight: 600;
+}
+
+.assignee.francesco {
+    background: #e6f3ff;
+    color: #2c5f8d;
+    border: 1px solid #4a7ba7;
+}
+
+.assignee.giulia {
+    background: #fff5e6;
+    color: #8b6f47;
+    border: 1px solid #d4a574;
+}
+
+.assignee.both {
+    background: linear-gradient(135deg, #e6f3ff 0%, #fff5e6 100%);
+    color: #2d3748;
+    border: 1px solid #cbd5e0;
+}
+
+/* Priority Tags */
+.priority {
+    display: inline-block;
+    padding: 0.3rem 0.6rem;
+    border-radius: 12px;
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.priority.high {
+    background: #feb2b2;
+    color: #742a2a;
+}
+
+.priority.medium {
+    background: #fbd38d;
+    color: #7c2d12;
+}
+
+.priority.low {
+    background: #c6f6d5;
+    color: #22543d;
+}
+
+/* Summary Section */
+.summary-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin: 2rem 0;
+}
+
+.summary-card {
+    background: white;
+    border-radius: 12px;
+    padding: 2rem;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    border: 1px solid #e2e8f0;
+}
+
+.summary-card h3 {
+    color: #2d3748;
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+}
+
+/* Progress Bar */
+.progress-bar-container {
+    width: 100%;
+    height: 30px;
+    background: #e2e8f0;
+    border-radius: 15px;
+    overflow: hidden;
+    margin: 1rem 0;
+}
+
+.progress-bar {
+    height: 100%;
+    background: linear-gradient(135deg, #d4a574 0%, #4a7ba7 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: 700;
+    font-size: 0.9rem;
+    transition: width 0.5s ease;
+}
+
+.summary-text {
+    color: #718096;
+    font-size: 0.95rem;
+    margin-top: 0.5rem;
+}
+
+.status-list,
+.assignee-list {
+    list-style: none;
+    padding: 0;
+}
+
+.status-list li,
+.assignee-list li {
+    padding: 0.5rem 0;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    color: #4a5568;
+}
+
+/* Edit Info Box */
+#edit-info {
+    margin-top: 3rem;
+}
+
+#edit-info code {
+    background: #edf2f7;
+    padding: 0.2rem 0.5rem;
+    border-radius: 4px;
+    font-size: 0.9rem;
+    color: #4a7ba7;
+}
+
+#edit-info ol {
+    margin: 1rem 0 1rem 1.5rem;
+    color: #4a5568;
+}
+
+#edit-info ol li {
+    margin-bottom: 0.5rem;
+    line-height: 1.6;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .fair-table {
+        font-size: 0.85rem;
+    }
+    
+    .fair-table th,
+    .fair-table td {
+        padding: 0.75rem 0.5rem;
+    }
+    
+    .legend-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .summary-grid {
+        grid-template-columns: 1fr;
+    }
+}
